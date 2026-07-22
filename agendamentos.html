@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Agendamentos </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1> Agendamentos </h1>
+
+</header>
+
+<nav>
+    <a href="index.html">Dashboard</a>
+    <a href="clientes.html">Clientes</a>
+    <a href="pets.html">Pets</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="agendamentos.html">Agendamentos</a>
+
+</nav>
+
+<main>
+
+<h2>Novo Agendamento</h2>
+
+<input type="text" id="cliente" placeholder="Cliente">
+
+<input type="text" id="pet" placeholder="Pet">
+
+<input type="text" id="servico" placeholder="Serviço">
+
+<input type="date" id="data">
+
+<input type="time" id="hora">
+
+<select id="status">
+    <option>Agendado</option>
+    <option>Concluído</option>
+    <option>Cancelado</option>
+</select>
+
+<button onclick="agendar()">
+
+Agendar
+
+</button>
+
+<h2>Lista de agendamentos</h2>
+<table>
+
+<thead>
+
+<tr>
+    <th>Cliente</th>
+    <th>Pet</th>
+    <th>Serviço</th>
+    <th>Data</th>
+    <th>Hora</th>
+    <th>Status</th>
+    <th>Ação</th>
+
+</tr>
+
+</thead>
+
+<tbody id="listaAgendamentos"></tbody>
+
+</table>
+
+</main>
+
+<script src="agendamentos.js"></script>
+
+</body>
+
+</html>

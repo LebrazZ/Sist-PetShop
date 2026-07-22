@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Serviços </title>
+
+     <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+<header>
+
+    <h1> Cadastro de Serviços </h1>
+
+</header>
+
+<nav>
+
+    <a href="index.html">Dashboard</a>
+    <a href="clientes.html">Clientes</a>
+    <a href="pets.html">Pets</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="agendamentos.html">Agendamentos</a>
+
+</nav>
+
+<main>
+
+<h2> Nossos Serviço </h2>
+
+<input
+type="text"
+id="nomeServico"
+placeholder="Nome do serviço">
+
+<select id="Categoria">
+    <option value="">Selecione</option>
+    <option>Banho</option>
+    <option>Tosa</option>
+    <option>Consulta Veterinária</option>
+    <option>Vacinação</option>
+    <option>Corte de Unhas</option>
+    <option>Limpeza de Ouvidos</option>
+</select>
+
+<select id="tipoTosa">
+    <option value="">Tipo de Tosa</option>
+    <option>Não se aplica</option>
+    <option>Tosa Higiênica</option>
+    <option>Tosa Bebê</option>
+    <option>Tosa na Máquina</option>
+    <option>Tosa de Tesoura</option>
+    <option>Tosa da Raça</option>
+</select>
+
+<select id="valorServico" required>
+
+    <option value="">Selecione o Serviço</option>
+
+    <option value="40">Banho - R$ 40,00</option>
+
+    <option value="35">Tosa Higiênica - R$ 35,00</option>
+    <option value="50">Tosa Bebê - R$ 50,00</option>
+    <option value="60">Tosa na Máquina - R$ 60,00</option>
+    <option value="80">Tosa de Tesoura - R$ 80,00</option>
+    <option value="90">Tosa da Raça - R$ 90,00</option>
+
+    <option value="120">Consulta Veterinária - R$ 120,00</option>
+
+    <option value="80">Vacinação - R$ 80,00</option>
+
+    <option value="20">Corte de Unhas - R$ 20,00</option>
+
+    <option value="25">Limpeza de Ouvidos - R$ 25,00</option>
+
+</select>
+
+<button onclick="cadastrarServico()">
+
+Cadastrar
+
+</button>
+
+<h2>Lista de Serviços</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Serviço</th>
+<th>Categoria</th>
+<th>Valor</th>
+<th>Duração</th>
+<th>Ação</th>
+
+</tr>
+
+</thead>
+
+<tbody id="listaServicos"></tbody>
+
+</table>
+
+</main>
+
+<script src="servicos.js"></script>
+
+</body>
+
+</html>

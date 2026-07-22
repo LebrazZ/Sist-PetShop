@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(166, 103, 224);
+    color: aliceblue;
+}
+
+header {
+    background-color: rgb(166, 103, 224);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #6a0dad;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.card h2{
+    margin-bottom: 15px;
+    color: blueviolet;
+}
+
+.card p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Formulários */
+
+main h2{
+    margin: 20px 0 15px;
+}
+
+input,
+select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button{
+    background-color: white;
+    color: blueviolet;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover{
+    background-color: white;
+}
+
+/* Tabelas */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th{
+    background-color: #6a0dad;
+    color: white;
+    padding: 12px;
+}
+
+td{
+    padding: 12px;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: white;
+}
+
+td button{
+    margin: 0 5px;
+}

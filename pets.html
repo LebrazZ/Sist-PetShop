@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header> 
+        <h1> Cadastro de Pets </h1>
+    </header>
+
+    <nav>
+        <a href="index.html">DashBoard</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="pets.html">Pets</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="agendamentos.html">Agendamentos</a>
+    </nav>
+
+    <main>
+
+        <h2>Novo Pet</h2>
+
+        <input type="text" id="nomePet" placeholder="Nome do Pet">
+
+        <select id="especie">
+        <option>Cachorro</option>
+        <option>Gato</option>
+        <option>Pássaro</option>
+        <option>Coelho</option>
+        <option>Hamster</option>
+        <option>Outros</option>
+        </select>
+
+        <select id="raca">
+            <option value="">Raça</option>
+            <option>SRD (Vira-lata)</option>
+            <option>Shih Tzu</option>
+            <option>Lhasa Apso</option>
+            <option>Poodle</option>
+            <option>Golden Retriever</option>
+            <option>Labrador</option>
+            <option>Yorkshire</option>
+            <option>Spitz Alemão</option>
+            <option>Bulldog Francês</option>
+            <option>Pastor Alemão</option>
+            <option>Border Collie</option>
+            <option>Beagle</option>
+            <option>Parsa</option>
+            <option>Siamês</option>
+
+        </select>
+
+        <select id="porte">
+            <option value="">Porte</option>
+            <option>Pequeno</option>
+            <option>Médio</option>
+            <option>Grande</option>
+        </select>
+
+        <input type="number" id="idade" placeholder="Idade">
+
+        <input type="number" id="peso" placeholder="Peso">
+
+        <input type="text" id="tutor" placeholder="Tutor">
+
+        <button onclick="cadastrarPet()">Cadastrar</button>
+
+        <h2> Lista de Pets </h2>
+
+        <table>
+            <thead>
+                <tr>
+                    
+                    <th>Nome</th>
+
+                    <th>Espécie</th>
+
+                    <th>Raça</th>
+
+                    <th>Porte</th>
+
+                    <th>Idade</th>
+
+                    <th>Peso</th>
+
+                    <th>Tutor</th>
+
+                    <th>Ação</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="listaPets"></tbody>
+
+        </table>
+
+    </main>
+
+    <script src="pets.js"></script>
+</body>
+</html>
